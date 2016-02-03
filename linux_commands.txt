@@ -1,0 +1,34 @@
+#find files and replace string
+find ./ -type f -exec sed -i 's/mdw::RFD::ShadowMode::Obe/mdw::RFD::ShadowMode/g' {} \;
+
+#watch changing files in a directory
+watch -n 10 -d "ls -ltur | tail -20"
+
+
+grep -n "boo" a_file
+ -v is the negative switch
+ -c count occurences
+ -i case Insensitive
+ -x exact matches (full lines)
+ -w looking for full words
+ -r recursive in all dirs
+ egrep (piping and conditions)
+ fgrep no regex, so we can search for pipe and dollar sign easily
+
+  find / -name
+ not to show error/perm denied msgs: 2>/dev/null
+
+ alias to show all aliases
+
+ use \ before linux command to use the command without aliases, like : \ls
+
+
+ VIM
+ gg=G to replace tabs to spaces
+
+# -a shows the files/dirs start with a . (period)
+ ls -a
+
+ # run something in the backgroud
+
+ firefox &

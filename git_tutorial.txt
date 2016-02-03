@@ -1,0 +1,41 @@
+git diff first_commit second_commit
+# to add colors
+git config --global color.ui auto
+
+git log | grep "xxxx" -C 10
+
+# to go to an older state! Detached head state!
+git checkout commitID
+
+# compare working dir and staging
+git diff
+
+# compare staging dir and commit
+git diff --staged
+
+# discard all changes in working dir and staging are. this is irreversible!
+git reset --hard
+
+git log --graph --oneline master coins
+
+#show what change was introduced by a commit compared to its parents
+git show commitid
+
+# show a number of commits, in this case 1
+git log -n 1
+
+
+# git pull origin master == git fetch  origin && git merge master origin/master
+
+#Checkout that detached head
+ git checkout -
+
+
+# The destination refspec neither matches an existing ref on the remote nor
+# begins with refs/, and we are unable to guess a prefix based on the source ref.
+# error: failed to push some refs to 'https://sdargo@rndwww.nce.amadeus.net/git/scm/rdr/ref-synchro-v2.git'
+
+ git push origin 74af29a20046958d1340ceffb7488fb976334c26:refs/heads/master
+
+# to change the remote URL
+git remote set-url URL

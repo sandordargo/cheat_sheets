@@ -1,0 +1,42 @@
+Use spaces according to the guidelines!
+
+Use spaces in a coherent way and according to the guidelines!
+
+Const reference input parameters!
+
+Use spaces instead of tabs!
+
+Within 15 lines of code you mix two styles. Be consistent!
+
+Trailing spaces!
+
+Trailing space!
+
+
+Do you think it is fine to have a function of around 200 lines?
+
+https://rndwww.nce.amadeus.net/confluence/pages/viewpage.action?pageId=23409256#C/C++AmadeusCodingGuidelines-WriteShortFunctions
+
+Dead code! Remove it!
+
+Use shared pointers! We don't like to live so dangerously! :)
+
+And again!
+
+File full of trailing spaces!
+
+Good, then document it!
+
+Invalid parameter name!
+
+Bad indentation!
+
+You might remove the empty line
+
+You might remove the empty lines
+
+Use spaces instead of tabs, you can set up your editor properly.
+
+Doxygen refernce:
+
+https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#memberdoc
