@@ -30,5 +30,22 @@ grep -n "boo" a_file
  ls -a
 
  # run something in the backgroud
-
  firefox &
+
+ # change owner of a partition
+ sudo chown sdargo /media/sdargo/personal/ -R
+
+#show partition info
+sudo fdisk -l
+
+#change label
+sudo e2label /dev/sda8 "personal"
+
+#file to setup labels, rules
+#http://www.reactivated.net/writing_udev_rules.html
+#http://unix.stackexchange.com/questions/230308/how-can-i-set-a-label-on-a-dm-cryptluks-container
+sudo subl /etc/udev/rules.d/80-disk-label.rules
+
+#get disk uuids
+sdargo@ncelr51130:/media/sdargo/personal$ blkid /dev/sda8 
+/dev/sda8: UUID="354c130b-80e6-4c88-8fcb-fbe65a5cfb25" TYPE="crypto_LUKS
