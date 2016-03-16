@@ -49,3 +49,8 @@ sudo subl /etc/udev/rules.d/80-disk-label.rules
 #get disk uuids
 sdargo@ncelr51130:/media/sdargo/personal$ blkid /dev/sda8 
 /dev/sda8: UUID="354c130b-80e6-4c88-8fcb-fbe65a5cfb25" TYPE="crypto_LUKS
+
+# to mount cryted partitions at startup, modify /etc/crypttab, then /etc/fstab
+
+# So if you have a .deb file:
+# You can install it using sudo dpkg -i /path/to/deb/file followed by sudo apt-get install -f .

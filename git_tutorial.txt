@@ -39,3 +39,15 @@ git log -n 1
 
 # to change the remote URL
 git remote set-url URL
+
+# git pull = git fetch && git merge
+# git diff HEAD after git fetch
+
+
+# Porting 1 commit from one branch to another one (~ hg transplant/graft)
+Git checkout <target_branch>
+Git cherry-pick <commit hash>
+
+# Putting changes away temporarily
+Git stash (~ hg shelve --all)
+Git stash pop (~ hg unshelve
