@@ -51,3 +51,9 @@ Git cherry-pick <commit hash>
 # Putting changes away temporarily
 Git stash (~ hg shelve --all)
 Git stash pop (~ hg unshelve
+
+#If you want to rename a branch while pointed to any branch, simply do :
+git branch -m <oldname> <newname>
+
+#If you want to rename the current branch, you can simply do:
+git branch -m <newname>
