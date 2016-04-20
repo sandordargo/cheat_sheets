@@ -54,3 +54,10 @@ sdargo@ncelr51130:/media/sdargo/personal$ blkid /dev/sda8
 
 # So if you have a .deb file:
 # You can install it using sudo dpkg -i /path/to/deb/file followed by sudo apt-get install -f .
+
+
+# list installed linux kernels
+dpkg --list | grep linux-image
+
+# remove linux kernel with specific version
+sudo apt-get --purge remove linux-image-<VERSION>-generic linux-image-extra-<VERSION>-generic
