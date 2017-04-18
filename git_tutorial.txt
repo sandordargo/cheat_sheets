@@ -57,3 +57,9 @@ git branch -m <oldname> <newname>
 
 #If you want to rename the current branch, you can simply do:
 git branch -m <newname>
+
+# Update anyBranch from master
+git checkout master
+git pull
+git checkout anyBranch
+git merge origin/master
