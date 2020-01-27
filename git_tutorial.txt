@@ -63,3 +63,16 @@ git checkout master
 git pull
 git checkout anyBranch
 git merge origin/master
+
+
+# rebase
+## if you know how many
+ git rebase -i HEAD~n
+
+## if you don't
+git merge-base my-branch edx/master
+git rebase -i ${HASH}
+
+
+git rebase edx/maste
+grit rebase --continue
